@@ -3,7 +3,7 @@ import { tokens } from "../theme";
 export const sampleDataTeam = [
     {
       id: 1,
-      name: "Jon Snow",
+      name: "Jhon Snow",
       email: "jonsnow@gmail.com",
       age: 35,
       phone: "(665)121-5454",
