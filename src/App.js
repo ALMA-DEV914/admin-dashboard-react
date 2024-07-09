@@ -15,10 +15,12 @@ function App() {
         <CssBaseline>
           <div
             className="app">
+              <Sidebar isSidebar={isSidebar}/>
             <main className="content">
               <Topbar setIsSidebar={setIsSidebar} />
               <Routes>
                 <Route path="/form" element={<Form />} />
+                
               </Routes>
             </main>
           </div>
