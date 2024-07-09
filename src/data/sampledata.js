@@ -75,7 +75,7 @@ export const sampleDataTeam = [
     },
   ];
   
-  export const mockDataContacts = [
+  export const sampleDataContacts = [
     {
       id: 1,
       name: "Jon Snow",
@@ -199,7 +199,7 @@ export const sampleDataTeam = [
     },
   ];
   
-  export const mockDataInvoices = [
+  export const sampleDataInvoices = [
     {
       id: 1,
       name: "Jon Snow",
@@ -266,7 +266,7 @@ export const sampleDataTeam = [
     },
   ];
   
-  export const mockTransactions = [
+  export const sampleTransactions = [
     {
       txId: "01e4dsa",
       user: "johndoe",
@@ -317,7 +317,7 @@ export const sampleDataTeam = [
     },
   ];
   
-  export const mockBarData = [
+  export const sampleBarData = [
     {
       country: "AD",
       "hot dog": 137,
@@ -397,7 +397,7 @@ export const sampleDataTeam = [
     },
   ];
   
-  export const mockPieData = [
+  export const samplePieData = [
     {
       id: "hack",
       label: "hack",
@@ -430,7 +430,7 @@ export const sampleDataTeam = [
     },
   ];
   
-  export const mockLineData = [
+  export const sampleLineData = [
     {
       id: "japan",
       color: tokens("dark").greenAccent[500],
@@ -595,7 +595,7 @@ export const sampleDataTeam = [
     },
   ];
   
-  export const mockGeographyData = [
+  export const sampleGeographyData = [
     {
       id: "AFG",
       value: 520600,

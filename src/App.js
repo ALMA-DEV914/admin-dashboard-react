@@ -5,6 +5,7 @@ import Sidebar from "./globalComponents/Sidebar";
 import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Form from "./scenes/form/form";
+import Bar from "./scenes/bar/bar";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -20,6 +21,7 @@ function App() {
               <Topbar setIsSidebar={setIsSidebar} />
               <Routes>
                 <Route path="/form" element={<Form />} />
+                <Route path="/bar" element={<Bar />} />
                 
               </Routes>
             </main>
