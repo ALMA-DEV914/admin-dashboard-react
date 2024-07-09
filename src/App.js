@@ -6,6 +6,8 @@ import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Form from "./scenes/form/form";
 import Bar from "./scenes/bar/bar";
+import Contacts from "./scenes/contacts";
+import Dashboard from "./scenes/dashboard";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -20,6 +22,8 @@ function App() {
             <main className="content">
               <Topbar setIsSidebar={setIsSidebar} />
               <Routes>
+                <Route path="/" element={<Dashboard/>} />
+                <Route path="/contact" element={<Contacts/>} />
                 <Route path="/form" element={<Form />} />
                 <Route path="/bar" element={<Bar />} />
                 

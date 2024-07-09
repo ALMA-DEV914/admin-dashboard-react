@@ -2,7 +2,6 @@ import { useState } from "react";
 import { ProSidebarProvider, Menu, MenuItem } from "react-pro-sidebar";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
-
 import { tokens } from "../theme";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
@@ -107,10 +106,10 @@ const Sidebar = () => {
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
-                  Almita 
+                  Almita
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
-                 New Admin
+                  New Admin
                 </Typography>
               </Box>
             </Box>
