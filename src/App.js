@@ -10,6 +10,7 @@ import Contacts from "./scenes/contacts";
 import Dashboard from "./scenes/dashboard";
 import Team from "./scenes/team";
 import Pie from "./scenes/pie";
+import LineChart from "./components/LineChart";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -30,6 +31,7 @@ function App() {
                 <Route path="/bar" element={<Bar />} />
                 <Route path="/team" element={<Team />} />
                 <Route path="/pie" element={<Pie />} />
+                <Route path="/line" element={<LineChart/>} />
                 
               </Routes>
             </main>
