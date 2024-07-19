@@ -9,6 +9,7 @@ import Bar from "./scenes/bar/bar";
 import Contacts from "./scenes/contacts";
 import Dashboard from "./scenes/dashboard";
 import Team from "./scenes/team";
+import Pie from "./scenes/pie";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -28,6 +29,7 @@ function App() {
                 <Route path="/form" element={<Form />} />
                 <Route path="/bar" element={<Bar />} />
                 <Route path="/team" element={<Team />} />
+                <Route path="/pie" element={<Pie />} />
                 
               </Routes>
             </main>
