@@ -2,8 +2,16 @@ import { Box, Button, IconButton, Typography, useTheme } from "@mui/material";
 import { tokens } from "../../theme";
 import { sampleTransactions } from "../../data/sampleData";
 import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
+import EmailIcon from "@mui/icons-material/Email";
+import PointOfSaleIcon from "@mui/icons-material/PointOfSale";
+import PersonAddIcon from "@mui/icons-material/PersonAdd";
+import TrafficIcon from "@mui/icons-material/Traffic";
 import Header from "../../components/Header";
+import LineChart from "../../components/LineChart";
+import GeographyChart from "../../components/GeographyChart";
 import BarChart from "../../components/BarChart";
+import StatBox from "../../components/StatBox";
+import ProgressCircle from "../../components/ProgressCircle";
 
 const Dashboard = () => {
   const theme = useTheme();
@@ -46,7 +54,17 @@ const Dashboard = () => {
           alignItems="center"
           justifyContent="center"
         >
-          
+          <StatBox
+            title="12,361"
+            subtitle="Emails Sent"
+            progress="0.75"
+            increase="+14%"
+            icon={
+              <EmailIcon
+                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+              />
+            }
+          />
         </Box>
         <Box
           gridColumn="span 3"
@@ -55,7 +73,17 @@ const Dashboard = () => {
           alignItems="center"
           justifyContent="center"
         >
-          
+          <StatBox
+            title="431,225"
+            subtitle="Sales Obtained"
+            progress="0.50"
+            increase="+21%"
+            icon={
+              <PointOfSaleIcon
+                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+              />
+            }
+          />
         </Box>
         <Box
           gridColumn="span 3"
@@ -64,7 +92,17 @@ const Dashboard = () => {
           alignItems="center"
           justifyContent="center"
         >
-          
+          <StatBox
+            title="32,441"
+            subtitle="New Clients"
+            progress="0.30"
+            increase="+5%"
+            icon={
+              <PersonAddIcon
+                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+              />
+            }
+          />
         </Box>
         <Box
           gridColumn="span 3"
@@ -73,7 +111,17 @@ const Dashboard = () => {
           alignItems="center"
           justifyContent="center"
         >
-          
+          <StatBox
+            title="1,325,134"
+            subtitle="Traffic Received"
+            progress="0.80"
+            increase="+43%"
+            icon={
+              <TrafficIcon
+                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+              />
+            }
+          />
         </Box>
 
         {/* ROW 2 */}
@@ -114,7 +162,7 @@ const Dashboard = () => {
             </Box>
           </Box>
           <Box height="250px" m="-20px 0 0 0">
-           
+            <LineChart isDashboard={true} />
           </Box>
         </Box>
         <Box
@@ -184,7 +232,7 @@ const Dashboard = () => {
             alignItems="center"
             mt="25px"
           >
-           
+            <ProgressCircle size="125" />
             <Typography
               variant="h5"
               color={colors.greenAccent[500]}
@@ -225,7 +273,7 @@ const Dashboard = () => {
             Geography Based Traffic
           </Typography>
           <Box height="200px">
-            
+            <GeographyChart isDashboard={true} />
           </Box>
         </Box>
       </Box>
