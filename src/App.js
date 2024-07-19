@@ -11,6 +11,8 @@ import Dashboard from "./scenes/dashboard";
 import Team from "./scenes/team";
 import Pie from "./scenes/pie";
 import LineChart from "./components/LineChart";
+import Geography from "./scenes/geography";
+import Calendar from "./scenes/calendar";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -32,7 +34,8 @@ function App() {
                 <Route path="/team" element={<Team />} />
                 <Route path="/pie" element={<Pie />} />
                 <Route path="/line" element={<LineChart/>} />
-                
+                <Route path="/calendar" element={<Calendar />} />
+                <Route path="/geography" element={<Geography />} />
               </Routes>
             </main>
           </div>
